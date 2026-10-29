@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications – Peter Manzl</title>
+  <meta name="description" content="List of publications by Peter Manzl: journal articles and conference papers on multibody dynamics, robotics and machine learning.">
+  <link rel="icon" href="figures/Icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Peter Manzl</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="literature.html" aria-current="page">Publications</a>
+      <a href="theses.html">Theses</a>
+      <a href="cv.html">CV</a>
+    </nav>
+    <button class="icon-btn" id="theme-toggle" aria-label="Toggle light/dark mode">◐</button>
+    <button class="icon-btn" id="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <h1>Publications</h1>
+    <p>Journal articles, conference papers and preprints. See also <a href="https://orcid.org/0000-0002-7707-5524">ORCID</a>.</p>
+  </div>
+  <h2>2026</h2>
+  <ul class="pubs">
+    <li>
+      <div class="title">Path Following and Stabilization of a Bicycle Model using a Reinforcement Learning Approach</div>
+      <div class="venue">S. Weyrer, <strong>P. Manzl</strong>, A. L. Schwab, et al. · <em>Multibody System Dynamics</em> 67, pp. 775–810 · <a class="doi" href="https://doi.org/10.1007/s11044-026-10144-x">10.1007/s11044-026-10144-x</a></div>
+      <p class="note">The bicycle is an interesting example for an unstable multibody system where the instability depneds on the forward velocity. While most work is investigating either path following or stabilization we show that a single agent is able to learn both tasks simultaniously with great performance. Using methods of explainable AI (SHAP values) we were able to show that the model learns the analtically known principle of countersteering. </p>
+    </li>
+  </ul>
+  <h2>2025</h2>
+  <ul class="pubs">
+    <li>
+      <div class="title">Realtime structural dynamics estimation in hydraulically actuated systems using 3D flexible multibody simulation and SLIDE networks</div>
+      <div class="venue">Q. Khadim, <strong>P. Manzl</strong>, E. Kurvinen, A. Mikkola, G. Orzechowski, J. Gerstmayr · <em>Mechanical Systems and Signal Processing</em> 240, 113220 · <a class="doi" href="https://doi.org/10.1016/j.ymssp.2025.113220">10.1016/j.ymssp.2025.113220</a></div>
+      <p class="note">We applied the method SLIDE to speed up the computation of deflection and stresses in a hydraulically actuated crane system with flexible boom. </p>
+    </li>
+    <li>
+      <div class="title">SLIDE: A machine-learning based method for forced dynamic response estimation of multibody systems</div>
+      <div class="venue"><strong>P. Manzl</strong>, A. Humer, Q. Khadim, J. Gerstmayr · <em>Mechanics Based Design of Structures and Machines</em>, pp. 1–29 · <a class="doi" href="https://doi.org/10.1080/15397734.2025.2559325">10.1080/15397734.2025.2559325</a></div>
+      <p class="note">We investigated machine learning methods to train surrogate models. These surrogate models reflect the dynamics of a given system and can replace classical dynamical solvers with increadible speedups. In the case of damped systems with forced excitation, the damping can be exploited to eliminate the otherwise required initial conditions of the systems and instead using a longer input window in connection with a truncated output window of the system. </p>
+    </li>
+    <li>
+      <div class="title">Creation, evaluation and self-validation of simulation models with large language models</div>
+      <div class="venue">T. Möltner, <strong>P. Manzl</strong>, M. Pieber, J. Gerstmayr · <em>Neurocomputing</em>, 132030 · <a class="doi" href="https://doi.org/10.1016/j.neucom.2025.132030">10.1016/j.neucom.2025.132030</a></div>
+      <p class="note">Large Language Models (LLMs) show strong problem solving and coding capabilities. In the domain of mechanical engineering and multibody dynamics they can be used to create simulation models. In this publication we investigated open-source LLMs - which can run on local machines, eliminating the widely discussed issue of data autonomy, and how they can be used to create and evaluate simulation models. Furthermore an approach of self-validation through other LLMs is explored and evaluated. 
+      </p>
+    </li>
+    <li>
+      <div class="title">Surrogate Models for Compliant Joints in Programmable Structures</div>
+      <div class="venue">M. Pieber, Z. Zhang, <strong>P. Manzl</strong>, J. Gerstmayr · <em>Journal of Computational and Nonlinear Dynamics</em> 20(8), 081010 · <a class="doi" href="https://doi.org/10.1115/1.4068579">10.1115/1.4068579</a></div>
+      <p class="note">Complient mechanisms show great promise for miniturizing joints in adaptive robot cells which can attach, dettach and reconfigure themselfes. One problem of using complient mechanisms for joints is the inevitably occuring parasitic motion making them non-ideal joints. In this work we investigated surrogate models (using polinomials and neural networks) and an approach how these surrogate models can be used in simulation to minimize the task-space error occuring in robotics applications.</p>
+    </li>
+  </ul>
+
+  <h2>2024</h2>
+  <ul class="pubs">
+    <li>
+      <div class="title">Multibody Models Generated from Natural Language</div>
+      <div class="venue">J. Gerstmayr, <strong>P. Manzl</strong>, M. Pieber · <em>Multibody System Dynamics</em> 62, pp. 249–271 · <a class="doi" href="https://doi.org/10.1007/s11044-023-09962-0">10.1007/s11044-023-09962-0</a></div>
+      <p class="note">In beginning of 2023 when we started the first experiments it was for many experts unthinkable that Large Language Models (LLMs) would be able to create simulation models just on a basis of natural language descriptions. In this paper we explore approaches and the performance of early LLMs like GPT-3.5, Bard, Llama-2 and (at that time newest and strongest model) GPT-4. Looking at the results a few years later the quatnum leap LLMs performed is very appearant as the performance of a small open-weight LLM in 2026 outperforms all models of 2024. </p>
+    </li>
+    <li>
+      <div class="title">A Mecanum wheel model based on orthotropic friction with experimental validation</div>
+      <div class="venue"><strong>P. Manzl</strong>, M. Sereinig, J. Gerstmayr · <em>Mechanism and Machine Theory</em> 193, 105548 · <a class="doi" href="https://doi.org/10.1016/j.mechmachtheory.2023.105548">10.1016/j.mechmachtheory.2023.105548</a></div>
+      <p class="note">The Mechanum wheel is an very interesting type of wheel with rollers on it's circomference. Most research on Mecanum wheeled robots is aknowledging the non-ideal effects and investigating sophisticated control approaches how to compensate the effects. In this research we did a large-scale investigation on non-ideal effects and influences like changing COM and different velocities. In addition to that we show a very efficient simulation model with is faster than realtime, enabling the simulation model to be used in closed-loop control approaches. </p>
+    </li>
+    <li>
+      <div class="title">Surrogate Models for Compliant Joints in Programmable Structures</div>
+      <div class="venue">M. Pieber, Z. Zhang, <strong>P. Manzl</strong>, J. Gerstmayr · IDETC-CIE 2024, 20th Int. Conf. on Multibody Systems, Nonlinear Dynamics, and Control, ASME · <a class="doi" href="https://doi.org/10.1115/DETC2024-143600">10.1115/DETC2024-143600</a></div>
+      <p class="note">This 2024 publication is the initial work lead to an invite to submit it to the Journal of Comnputational and Nonlinear Dynamics 2025. </p>
+    </li>
+    <li>
+      <div class="title">Task-Dependent Comfort Zone, a Base Placement Strategy for Mobile Manipulators Based on Manipulability Measures</div>
+      <div class="venue">M. Sereinig, <strong>P. Manzl</strong>, J. Gerstmayr · <em>Robotics</em> 13(8) · <a class="doi" href="https://doi.org/10.3390/robotics13080122">10.3390/robotics13080122</a></div>
+      <p class="note">Mobile manipulators typically are redundant systems where a for the manipulation of an object the manipulator can place it's platform relative to an object in a wide area. To optimize the manipulation of the object, we propse the conecpt of the _comfort zone_ - an approach to evaluate how well a task can be performed by the robot in a given pose (relative to the object). </p>
+    </li>
+  </ul>
+
+  <h2>2023</h2>
+  <ul class="pubs">
+    <li>
+      <div class="title">Reliability evaluation of reinforcement learning methods for mechanical systems with increasing complexity</div>
+      <div class="venue"><strong>P. Manzl</strong>, O. Rogov, J. Gerstmayr, A. Mikkola, G. Orzechowski · <em>Multibody System Dynamics</em>, special issue on Artificial Intelligence within Multibody System Dynamics, pp. 1–25 · <a class="doi" href="https://doi.org/10.1007/s11044-023-09960-2">10.1007/s11044-023-09960-2</a></div>
+      <p class="note">Reinforcement Learning (RL) is well known as a powerful tool of learning a policy - basically an agent's strategy on how to choose a given action depending on the observed environment - and is often applied to control problems. A major issue of applying RL to real control problems is the lack of safety guarantees. In this work we investigate how reliable an agent can control the N-link cartpole for N <math><mo>∈</mo><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>}</mo></mrow></math> and visualizing the failure areas of given agents. We also find <em>blind spots</em> in agents with discrete action-space. </p>
+    </li>
+    <li>
+      <div class="title">Omnidirectional Mobile Manipulator LeoBot for Industrial Environments, Developed for Research and Teaching</div>
+      <div class="venue">M. Sereinig, <strong>P. Manzl</strong>, J. Gerstmayr, P. Hoffmann, R. Neurauter, M. Pieber · <em>RoboCup 2022: Robot World Cup XXV</em>, Springer, pp. 127–139 · <a class="doi" href="https://doi.org/10.1007/978-3-031-28469-4_11">10.1007/978-3-031-28469-4_11</a></div>
+      <p class="note">In our RoboCup@Work team we developed a new mobile manipulator Leobot with a mecanum weheeled omnidirectional base and a 7 DoF manipulator on top. In the publication we showcase the development and components required to bring the system to live. </p>
+    </li>
+  </ul>
+
+  <h2>2020–2022</h2>
+  <ul class="pubs">
+    <li>
+      <div class="title">Modellierung und experimentelle Validierung von Mecanumrädern</div>
+      <div class="venue"><strong>P. Manzl</strong>, M. S. Sereinig, J. Gerstmayr · Achte IFToMM D-A-CH Konferenz 2022 · <a class="doi" href="https://doi.org/10.17185/duepublico/43383">10.17185/duepublico/43383</a></div>
+      <p class="note">We presented an intermediate version of the Mecanum wheel model based on orthotropic friction at the german IFToMM D-A-CH conference 2022 and included the (multidimensional) identification of model parameters using genetic optimization. </p>
+    </li>
+    <li>
+      <div class="title">An Improved Dynamic Model of the Mecanum Wheel for Multibody Simulations</div>
+      <div class="venue"><strong>P. Manzl</strong>, J. Gerstmayr · IDETC-CIE 2021, ASME, Vol. 85468 · <a class="doi" href="https://doi.org/10.1115/DETC2021-70281">10.1115/DETC2021-70281</a></div>
+      <p class="note">We presented an early version of the 2024 published Mecanum wheel model based on orthotropic friction. We also developed a Mecanum wheel model using a full multibody model with contact. While not as efficient as the orthotropic model, through re-parametrization of the roller geometry into polynomials an efficient contact-point analysis is enabled. </p>
+    </li>
+    <li>
+      <div class="title">Komfortzone mobiler Manipulatoren</div>
+      <div class="venue">M. Sereinig, <strong>P. Manzl</strong>, J. Gerstmayr · Sechste IFToMM D-A-CH Konferenz 2020 · <a class="doi" href="https://doi.org/10.17185/duepublico/71180">10.17185/duepublico/71180</a></div>
+      <p class="note">At the IFToMM D-A-CH conference we presented early findings and a concept of the later published comfort zone. </p>
+    </li>
+  </ul>
+
+  <h2>Theses</h2>
+  <ul class="pubs">
+    <li>
+      <div class="title">Multibody Dynamics Towards Artificial Intelligence and Robotics</div>
+      <div class="venue">PhD thesis, University of Innsbruck, 2024 · <a href="theses.html">details</a></div>
+      <p class="note">My cummulative dissertation showcasing my research between 2021 and 2024. </p>
+    </li>
+    <li>
+      <div class="title">Realtime Movement of a Mecanum Wheeled Robot using the Robot Operating System ROS</div>
+      <div class="venue">Master's thesis, University of Innsbruck, 2020 · <a href="theses.html">details</a></div>
+      <p class="note">Developing the Mecanum wheeled manipulator Leobot I was working on developing the mobile base. For that I developed and programmed drivers for the motor drivers using EtherCAT for a real-time linux system. Furthermore I developed ROS interfaces, odometry and investigated the influence on the Mecanum wheel configuration (X vs. O). </p>
+    </li>
+     <li>
+      <div class="title">Flexibler 6R-Roboter</div>
+      <div class="venue">Bachelor's thesis, University of Innsbruck, 2018 · <a href="theses.html">details</a></div>
+      <p class="note">In my Bachelor thesis I worked on developing a 6R robot. In the project I developed the communication between sensors, control, motors, and microcontrollers based on CAN bus. While my master study I was employed at the chair for further development of lab exercises and demonstrations, safety components, and added new features as e.g. monitoring of grasp state using current sensing of the gripper motors. </p>
+    </li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© Peter Manzl</span>
+    <span><a href="https://www.uni-augsburg.de/de/fakultaet/mntf/mrm/prof/mech/forschung/ag-robotik/">AG Robotik, Universität Augsburg</a></span>
+  </div>
+</footer>
+</body>
+</html>

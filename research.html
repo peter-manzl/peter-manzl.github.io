@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research – Peter Manzl</title>
+  <meta name="description" content="Research topics and projects: robot-based testing and manufacturing, multibody dynamics, machine learning, mobile manipulation.">
+  <link rel="icon" href="figures/Icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Peter Manzl</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="literature.html">Publications</a>
+      <a href="theses.html">Theses</a>
+      <a href="cv.html">CV</a>
+    </nav>
+    <button class="icon-btn" id="theme-toggle" aria-label="Toggle light/dark mode">◐</button>
+    <button class="icon-btn" id="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <h1>Research</h1>
+    <p>My group builds robot-based systems for quality assurance and manufacturing and combines physics-based simulation with machine learning. Application areas include aerospace, automotive and energy technology.</p>
+  </div>
+
+  <h2>Robotics group, Augsburg</h2>
+  <p>The <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/mrm/prof/mech/forschung/ag-robotik/">AG Robotik</a> is part of Mechanical Engineering at the Institute for Materials Resource Management. The goal is adaptive, robot-supported systems that give reproducible, precise and efficient processes.</p>
+  <div class="grid">
+    <article class="card"><h3>Collision avoidance &amp; path planning</h3><p>Motion planning adapted to each object and optimized for reachability and pose-dependent loads, to shorten or enable cycle times.</p></article>
+    <article class="card"><h3>Robot-based component testing</h3><p>Force-moment data is used actively in control, to compensate unwanted load components or to hold a trajectory on a target load vector.</p></article>
+    <article class="card"><h3>Robot-based inspection</h3><p>Several cooperating robots carry out radiography, computed tomography and optical inspection of large objects. The focus is on inspection sequences and sensor fusion.</p></article>
+    <article class="card"><h3>Robot-based bending</h3><p>Force- and moment-controlled two-arm systems produce complex structures without extra joining steps, combined with AI models of the process.</p></article>
+    <article class="card"><h3>Friction stir welding</h3><p>Sensors and AI monitor and optimize robotic friction stir welding in real time, to reduce scrap and add quality assurance.</p></article>
+    <article class="card"><h3>Sim2Real</h3><p>Simulation models are transferred to real robot applications for planning, optimization and virtual commissioning, and measurement data flows back into the models.</p></article>
+  </div>
+
+  <h2>Current projects</h2>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">2026–2028</span><span class="tag">CFP Augsburg</span>
+      <h3>RAISE – Robotic AI System for Inspection and Evaluation</h3>
+      <p>An autonomous robotic inspection cell that selects and runs suitable non-destructive tests for each part, with human-in-the-loop control. Partners: Airbus, Porsche, BMW.</p>
+    </article>
+    <article class="card">
+      <span class="tag">2026–2028</span><span class="tag">CFP Augsburg</span>
+      <h3>KIBiS – AI-based control of chained robotic bending and injection-molding joining</h3>
+      <p>An AI-controlled process chain that combines robotic profile bending with injection-molded joining, using fast surrogate models and sensor data. Partners: ANYBRID, KUKA, IPR.</p>
+    </article>
+    <article class="card">
+      <span class="tag">2023–2026</span><span class="tag">BayVFP</span>
+      <h3>KoKIRo – Cognitive, AI-controlled robot assembly system</h3>
+      <p>A flexible cobot assembly system with a digital twin, validated on tasks such as peg-in-hole assembly and screw handling. Partners: Fraunhofer IGCV, pro-micron, robominds, azero.</p>
+    </article>
+  </div>
+  <p style="margin-top:16px">The complete list of projects of the Mechanical Engineering chair is on the <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/mrm/prof/mech/forschung/projekte/">university project page</a>.</p>
+
+  <h2>Earlier research topics</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Machine learning for multibody systems</h3>
+      <p>SLIDE, a learning-based method that estimates the forced dynamic response of multibody systems in real time, including flexible structures in hydraulically actuated machines. Also surrogate models for compliant joints and reinforcement learning for mechanical systems.</p>
+      <p><a href="literature.html">See publications →</a></p>
+    </article>
+    <article class="card">
+      <h3>Simulation models from language</h3>
+      <p>Large language models that create, evaluate and self-validate multibody simulation models from natural-language descriptions.</p>
+    </article>
+    <article class="card">
+      <h3>Mecanum wheels &amp; mobile manipulators</h3>
+      <p>A Mecanum wheel model based on orthotropic friction with experimental validation, the base-placement strategy "Task-Dependent Comfort Zone", and the LeoBot platform.</p>
+    </article>
+    <article class="card">
+      <h3>Exudyn</h3>
+      <p>Open-source Python/C++ software for the simulation of flexible multibody systems. I contributed code for (mobile) robotics and the machine-learning modules. <a href="https://github.com/jgerstmayr/EXUDYN">github.com/jgerstmayr/EXUDYN</a></p>
+    </article>
+    <article class="card">
+      <h3>RoboCup@Work, Innsbruck</h3>
+      <p>Development and research of mobile manipulators for industrial applications, 2018–2023. <a href="https://github.com/leobot-UIBK/LeoBotRoboCup">LeoBot repository</a></p>
+    </article>
+    <article class="card">
+      <h3>Interdisciplinary robotics</h3>
+      <p>Since 2025: a robotic prototype developed with research groups in pharmaceutical technology and stroke research.</p>
+    </article>
+  </div>
+
+  <h2>Teaching</h2>
+  <ul>
+    <li><strong>Applied Robotics</strong> (since 2020): robot kinematics, 3D transformations, path planning and mobile robotics.</li>
+    <li><strong>Robotic Systems</strong> (since 2021): a practical master's course on robot dynamics, ROS and basic computer vision with classical and neural-network-based methods.</li>
+    <li>Co-teaching of <em>Advances: Robotics and Simulation</em> and <em>Multibody System Dynamics</em> (2021–2022).</li>
+  </ul>
+
+  <h2>Join the group</h2>
+  <p>Open positions and thesis topics are announced on the <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/mrm/prof/mech/">chair website</a>. Feel free to <a href="mailto:peter.manzl@uni-a.de">get in touch</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© Peter Manzl</span>
+    <span><a href="https://www.uni-augsburg.de/de/fakultaet/mntf/mrm/prof/mech/forschung/ag-robotik/">AG Robotik, Universität Augsburg</a></span>
+  </div>
+</footer>
+</body>
+</html>
